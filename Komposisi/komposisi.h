@@ -1,22 +1,11 @@
-#include <string>
 #include <iostream>
-#ifndef JANTUNG_H
-#define JANTUNG_H
-
+#include <string>
 using namespace std;
 
-class jantung
+#include "jantung.h"
+#include "manusia.h"
+
+int main()
 {
-public:
-    jantung()
-    {
-        cout << "jantung dihidupkan\n";
-    }
-
-    ~jantung()
-    {
-        cout << "jantung dimatikan\n";
-    }
-};
-
-#endif
+    manusia *varManusia = new manusia("Markus");
+}
